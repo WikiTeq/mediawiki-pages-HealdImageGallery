@@ -1,0 +1,17 @@
+
+ /* Heald  Image Gallery  - exactly 3 images across, same height */
+
+ var arr = ['keywords','places','people'];
+
+ $.each(arr, function(index, value){
+        var heald_icon    = $('<div class="icon-64 ' + value + '"></div>'); 
+        var heald_caption = $('<div class="text-center header"><div class="h2">' + value + '</div><hr></div>');
+        $('.heald-gallery .thumb').eq(index)
+           .wrapInner('<div class="container-photo rounded"></div>')
+           .prepend($(heald_icon))
+           .addClass('d-flex justify-content-center');
+        $(heald_caption).prependTo($('.heald-gallery .container-photo').eq(index));
+ });
+
+ $('.heald-gallery .thumb img')
+       .addClass('img-fluid');

@@ -1,0 +1,26 @@
+{
+    "publisher": "WikiTeq",
+    "author": "WikiTeq",
+    "language": "en",
+    "url": "https:\/\/github.com\/WikiTeq\/mediawiki-pages-ImageGallery-heald",
+    "packages": {
+        "HEALD Image Gallery": {
+            "globalID": "1620904740",
+            "description": "Stylizes the Mediawiki image gallery as a responsive navigational element.",
+            "version": "0.1",
+            "pages": [
+                {
+                    "name": "ImageGallery.css",
+                    "namespace": "NS_MEDIAWIKI",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ImageGallery-heald\/master\/Mediawiki%2FImageGallery.css.mediawiki"
+                },
+                {
+                    "name": "ImageGallery.js",
+                    "namespace": "NS_MEDIAWIKI",
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ImageGallery-heald\/master\/Mediawiki%2FImageGallery.js.mediawiki"
+                }
+            ],
+            "requiredExtensions": []
+        }
+    }
+}

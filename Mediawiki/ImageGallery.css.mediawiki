@@ -1,0 +1,134 @@
+ /* Heald  Image Gallery  - exactly 3 images across, same height */
+
+ .heald-gallery {
+   padding-top: 3rem;
+ }
+ .heald-gallery ul.gallery {
+   margin: 0.3em 0 0 .8em !important;
+ }
+ .heald-gallery ul.gallery li.gallerybox {
+   margin-bottom: 3rem;
+ }
+ .heald-gallery ul.gallery li.gallerybox > div {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+ }
+ .heald-gallery div.gallerytext {
+     padding: 2px 30px;
+ }
+ .heald-gallery div.gallerytext, .heald-gallery div.gallerytext p {
+    font-size: 84%;
+ }
+ .heald-gallery div.gallerytext a {
+    color: #216262 !important;
+ }
+ .heald-gallery li.gallerybox div.thumb {
+    text-align: center;
+    margin: 0 20px;
+ }
+
+ .icon-64 {
+    height: 64px;
+    width: 64px;
+    margin-top: -30px !important;
+    position: absolute;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 4px solid black;
+ }
+ .icon-64.keywords, .icon-64.places, .icon-64.people {
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    -webkit-filter: invert(1) contrast(.7) brightness(1.5);
+            filter: invert(1) contrast(.7) brightness(1.5);
+    background-color: #caa;
+ }
+ .icon-64.keywords {
+    background-image: url(https://www.svgrepo.com/show/166933/key.svg);
+ }
+ .icon-64.places {
+    background-image: url(https://www.svgrepo.com/show/161749/earth-globe.svg);
+ }
+ .icon-64.people {
+    background-image: url(https://www.svgrepo.com/show/307863/graphic-designer-creative-draw-artist.svg);
+ }
+
+ .container-photo {
+    padding: 0;
+    overflow: hidden;
+    border: 3px solid #e3e3e3;
+ }
+ .container-photo .header {
+    background-color: #fff;
+    padding-top: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+    z-index: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+ }
+ .container-photo .h2 {
+    font-size: 20px;
+    margin-top: 0;
+    color: #6e9292;
+    text-transform: uppercase;
+    font-variant: sub;
+ }
+ .container-photo hr {
+    width:40px;
+    margin-top:0;
+    border-color: #6e9292;
+ }
+ .container-photo img {
+    opacity: .8;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+ }
+ .container-photo:hover img {
+    opacity: 1;
+    -webkit-transform: scale(1.075);
+        -ms-transform: scale(1.075);
+            transform: scale(1.075);
+ }
+
+ .heald-gallery.noheader .container-photo .header {
+    display: none;
+ }
+ .heald-gallery.noicon .icon-64 {
+    display: none !important;
+ }
+ .heald-gallery.noicon .container-photo .header {
+    padding-top: .5rem;
+ }
+ .heald-gallery.noborder .container-photo {
+    border: 0;
+ }
