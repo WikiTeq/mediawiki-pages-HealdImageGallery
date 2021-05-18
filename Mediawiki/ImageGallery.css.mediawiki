@@ -5,6 +5,15 @@
  }
  .heald-gallery ul.gallery {
    margin: 0.3em 0 0 .8em !important;
+   width: calc(100%);
+   flex-wrap: nowrap;
+   display: flex;
+ }
+ @media screen and ( max-width: 576px ) {
+   .heald-gallery ul.gallery {
+      flex-direction: column;
+      align-items: center;
+   }
  }
  .heald-gallery ul.gallery li.gallerybox {
    margin-bottom: 3rem;
@@ -25,7 +34,7 @@
      padding: 2px 30px;
  }
  .heald-gallery div.gallerytext, .heald-gallery div.gallerytext p {
-    font-size: 84%;
+    font-size: 92%;
  }
  .heald-gallery div.gallerytext a {
     color: #216262 !important;
