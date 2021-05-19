@@ -15,7 +15,7 @@ File:Test2.jpg|link=Category:Keywords|[[:File:Test2.jpg|William Rush, ''North Ea
 File:Test3.jpg|link=Category:Places|[[:File:Test3.jpg|Alexander Jackson Davis, ''Garden Arch at Montgomery Place'', c. 1850.]]
 File:Test1.jpg|link=Category:People|[[:File:Test1.jpg|Anonymous, ''Deborah Norris [Logan] Portrait'', n.d.]]
 </gallery>
-<div>
+</div>
 ```
 Optional classes:
 * `noicon` - removes the icons
