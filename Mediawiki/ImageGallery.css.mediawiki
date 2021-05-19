@@ -15,9 +15,6 @@
       align-items: center;
    }
  }
- .heald-gallery ul.gallery li.gallerybox {
-   margin-bottom: 3rem;
- }
  .heald-gallery ul.gallery li.gallerybox > div {
    display: -webkit-box;
    display: -ms-flexbox;
