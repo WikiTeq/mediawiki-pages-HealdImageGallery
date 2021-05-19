@@ -19,8 +19,7 @@
                     "namespace": "NS_MEDIAWIKI",
                     "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ImageGallery-heald\/master\/Mediawiki%2FImageGallery.js.mediawiki"
                 }
-            ],
-            "requiredExtensions": []
+            ]
         }
     }
 }
