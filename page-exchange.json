@@ -5,7 +5,7 @@
     "url": "https:\/\/github.com\/WikiTeq\/mediawiki-pages-ImageGallery-heald",
     "packages": {
         "HEALD Image Gallery": {
-            "globalID": "1620904740",
+            "globalID": "heald-image-gallery",
             "description": "Stylizes the Mediawiki image gallery as a responsive navigational element.",
             "version": "0.1",
             "pages": [
