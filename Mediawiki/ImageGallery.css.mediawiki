@@ -114,13 +114,11 @@
     border-color: #6e9292;
  }
  .container-photo img {
-    opacity: .8;
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
  }
  .container-photo:hover img {
-    opacity: 1;
     -webkit-transform: scale(1.075);
         -ms-transform: scale(1.075);
             transform: scale(1.075);
