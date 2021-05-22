@@ -8,12 +8,16 @@
    width: calc(100%);
    flex-wrap: nowrap;
    display: flex;
+   justify-content: center;
  }
  @media screen and ( max-width: 576px ) {
    .heald-gallery ul.gallery {
       flex-direction: column;
       align-items: center;
    }
+ }
+ .heald-gallery ul.gallery li.gallerybox {
+   margin-bottom: 3rem;
  }
  .heald-gallery ul.gallery li.gallerybox > div {
    display: -webkit-box;
@@ -33,8 +37,9 @@
  .heald-gallery div.gallerytext, .heald-gallery div.gallerytext p {
     font-size: 92%;
  }
- .heald-gallery div.gallerytext a {
-    color: #216262 !important;
+ .heald-gallery div.gallerytext a,
+ .heald-gallery div.gallerytext p {
+    color: #01443e !important;
  }
  .heald-gallery li.gallerybox div.thumb {
     text-align: center;
@@ -59,15 +64,16 @@
     background-repeat: no-repeat;
     background-size: 65%;
     background-position: center;
-    -webkit-filter: invert(1) contrast(.7) brightness(1.5);
-            filter: invert(1) contrast(.7) brightness(1.5);
-    background-color: #caa;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    background-color: #febbc1 !important;
  }
  .icon-64.keywords {
     background-image: url(https://www.svgrepo.com/show/166933/key.svg);
  }
  .icon-64.places {
     background-image: url(https://www.svgrepo.com/show/161749/earth-globe.svg);
+    background-position: 44% 63%;
  }
  .icon-64.people {
     background-image: url(https://www.svgrepo.com/show/307863/graphic-designer-creative-draw-artist.svg);
@@ -104,14 +110,14 @@
  .container-photo .h2 {
     font-size: 20px;
     margin-top: 0;
-    color: #6e9292;
+    color: #01443e;
     text-transform: uppercase;
     font-variant: sub;
  }
  .container-photo hr {
     width:40px;
     margin-top:0;
-    border-color: #6e9292;
+    border-color: #01443e;
  }
  .container-photo img {
     -webkit-transition: all 1s ease;
