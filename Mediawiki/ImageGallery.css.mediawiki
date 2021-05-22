@@ -16,9 +16,6 @@
       align-items: center;
    }
  }
- .heald-gallery ul.gallery li.gallerybox {
-   margin-bottom: 3rem;
- }
  .heald-gallery ul.gallery li.gallerybox > div {
    display: -webkit-box;
    display: -ms-flexbox;
@@ -31,8 +28,11 @@
        -ms-flex-align: center;
            align-items: center;
  }
+ .heald-gallery ul.gallery li.gallerybox a:hover {
+     text-decoration: none !important;
+ }
  .heald-gallery div.gallerytext {
-     padding: 2px 30px;
+     padding: 2px 8px;
  }
  .heald-gallery div.gallerytext, .heald-gallery div.gallerytext p {
     font-size: 92%;
@@ -45,6 +45,9 @@
     text-align: center;
     margin: 0 20px;
  }
+ .heald-gallery li.gallerybox div.thumb > a {
+    position: absolute;
+ }
 
  .icon-64 {
     height: 64px;
@@ -55,7 +58,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
+    margin-left: -32px;
     margin-right: auto;
     border-radius: 50%;
     border: 4px solid black;
