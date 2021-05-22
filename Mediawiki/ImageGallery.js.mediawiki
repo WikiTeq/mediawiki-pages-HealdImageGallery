@@ -2,10 +2,12 @@
  /* Heald  Image Gallery  - exactly 3 images across, same height */
 
  var arr = ['keywords','places','people'];
+ var path = mw.config.get('wgScript');
 
  $.each(arr, function(index, value){
-        var heald_icon    = $('<div class="icon-64 ' + value + '"></div>'); 
-        var heald_caption = $('<div class="text-center header"><div class="h2">' + value + '</div><hr></div>');
+        var cap = value.charAt(0).toUpperCase() + value.slice(1);
+        var heald_icon    = $('<a href="' + path + '/Category:' + cap + '"><div class="icon-64 ' + value + '"></div></a>'); 
+        var heald_caption = $('<div class="text-center header"><a href="' + path + '/Category:' + cap + '"><div class="h2">' + value + '</div></a><hr></div>');
         $('.heald-gallery .thumb').eq(index)
            .wrapInner('<div class="container-photo rounded"></div>')
            .prepend($(heald_icon))
