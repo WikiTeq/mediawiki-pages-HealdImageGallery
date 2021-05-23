@@ -1,19 +1,37 @@
 
+
  /* Heald  Image Gallery  - exactly 3 images across, same height */
 
  var arr = ['keywords','places','people'];
  var path = mw.config.get('wgScript');
 
  $.each(arr, function(index, value){
-        var cap = value.charAt(0).toUpperCase() + value.slice(1);
-        var heald_icon    = $('<a href="' + path + '/Category:' + cap + '"><div class="icon-64 ' + value + '"></div></a>'); 
-        var heald_caption = $('<div class="text-center header"><a href="' + path + '/Category:' + cap + '"><div class="h2">' + value + '</div></a><hr></div>');
+
+        // Showcase main
+        var capitalized = value.charAt(0).toUpperCase() + value.slice(1);
+        var heald_icon    = $('<a href="' + path + '/Category:' + capitalized + '"><div class="icon-64 ' + value + '"></div></a>'); 
+        var heald_caption = $('<div class="text-center header"><a href="' + path + '/Category:' + capitalized + '"><div class="h2">' + value + '</div></a><hr></div>');
+
         $('.heald-gallery .thumb').eq(index)
            .wrapInner('<div class="container-photo rounded"></div>')
            .prepend($(heald_icon))
            .addClass('d-flex justify-content-center');
         $(heald_caption).prependTo($('.heald-gallery .container-photo').eq(index));
+
+        // Showcase essay 
+        var ess = document. getElementById('showcase-essay-' + ( index + 1) + '');
+        if($(ess).length){
+
+             var ess_title      = document. getElementById('showcase-title-' + ( index + 1) + ''),
+                 ess_title_text = ess_title.textContent,
+                 ess_title_url  = $('<a href="' + path + '/' + ess_title_text + '">' + ess_title_text + '</a>');
+
+                 ess_title.innerHTML = "";
+                 $(ess_title).prepend(ess_title_url);
+                 $(ess).prependTo($('.heald-gallery .container-photo').eq(index)).toggleClass('d-none d-flex'); 
+        }
  });
 
  $('.heald-gallery .thumb img')
        .addClass('img-fluid');
+
