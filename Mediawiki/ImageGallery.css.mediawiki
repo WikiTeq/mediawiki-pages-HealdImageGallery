@@ -40,6 +40,8 @@
  .heald-gallery div.gallerytext a,
  .heald-gallery div.gallerytext p {
     color: #01443e !important;
+    line-height: 21px !important;
+    font-size: 14px !important;
  }
  .heald-gallery li.gallerybox div.thumb {
     text-align: center;
@@ -87,7 +89,7 @@
     overflow: hidden;
     border: 3px solid #e3e3e3;
  }
- .container-photo .header {
+ .container-photo .header { 
     background-color: #fff;
     padding-top: 2.5rem;
     display: -webkit-box;
@@ -109,6 +111,45 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     position: relative;
+ }
+ .showcase-essay {
+    background-color: #fff;
+    padding: 1rem .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+    z-index: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .showcase-essay, .showcase-essay a, .showcase-title {
+    color: #01443e !important;
+ }
+ .showcase-title {
+    font-weight: bold;
+ }
+ .showcase-essay small {
+    display: block;
+    line-height: 20px;
+    padding-top: .5rem;
+    font-size: 14px !important
  }
  .container-photo .h2 {
     font-size: 20px;
