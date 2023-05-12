@@ -2,22 +2,22 @@
     "publisher": "WikiTeq",
     "author": "WikiTeq",
     "language": "en",
-    "url": "https:\/\/github.com\/WikiTeq\/mediawiki-pages-ImageGallery-heald",
+    "url": "https:\/\/github.com\/WikiTeq\/mediawiki-pages-HealdImageGallery",
     "packages": {
         "HEALD Image Gallery": {
-            "globalID": "heald-image-gallery",
+            "globalID": "com.wikiteq.HealdImageGallery",
             "description": "Stylizes the Mediawiki image gallery as a responsive navigational element.",
             "version": "0.1",
             "pages": [
                 {
                     "name": "ImageGallery.css",
                     "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ImageGallery-heald\/master\/Mediawiki%2FImageGallery.css.mediawiki"
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-HealdImageGallery\/master\/Mediawiki%2FImageGallery.css.mediawiki"
                 },
                 {
                     "name": "ImageGallery.js",
                     "namespace": "NS_MEDIAWIKI",
-                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-ImageGallery-heald\/master\/Mediawiki%2FImageGallery.js.mediawiki"
+                    "url": "https:\/\/raw.githubusercontent.com\/WikiTeq\/mediawiki-pages-HealdImageGallery\/master\/Mediawiki%2FImageGallery.js.mediawiki"
                 }
             ]
         }
